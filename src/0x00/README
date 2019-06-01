@@ -1,0 +1,6 @@
+This binary requires authentication with a password.
+
+There are two tasks:
+i) Find input that results in the program printing 'Password correct!'.
+ii) Modify the binary such that any input results in the program printing
+'Password correct!'.

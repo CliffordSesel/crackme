@@ -1,0 +1,25 @@
+This project contains a series of simple binaries designed to teach basic
+reverse engineering and cracking skills. Challenges are separated by
+difficulty, escalating onwards from 0x00.
+
+Each challenge provides a binary and a README explaining the challenge. The
+source code is publicly available but should not be used to solve the
+challenge.
+
+Build dependencies include:
+* GCC or Clang
+* Meson
+* Ninja
+
+Dependencies include:
+* libcurl
+
+Building the exercises can be done from the source directory by running:
+$ meson build --prefix $(pwd)/install
+$ cd build
+$ ninja
+
+Installing can be done by:
+$ ninja install
+
+Licensed under GPL3.

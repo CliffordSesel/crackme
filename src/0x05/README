@@ -1,0 +1,6 @@
+This binary simulates some non-malicious behaviour of the WannaCry virus.
+
+There are two tasks:
+i) Find out how to disable the malware without modifying the binary. You are
+not required to actually disable it.
+ii) Modify the binary such that the malware is disabled.

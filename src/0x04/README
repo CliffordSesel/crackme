@@ -1,0 +1,6 @@
+This binary requires authentication with a valid license.
+
+There are two tasks:
+i) Find input that results in the program printing 'License valid!'.
+ii) Modify the binary such that any input results in the program printing
+'License valid!'.
