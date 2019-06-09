@@ -63,7 +63,7 @@ int main(void)
 
 	if (!no_access)
 	{
-		puts("Access granted.");
+		puts("Access granted!");
 		return EXIT_SUCCESS;
 	}
 
