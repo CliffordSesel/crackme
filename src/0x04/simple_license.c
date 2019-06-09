@@ -32,12 +32,14 @@ bool validate_license(void)
 
 	/* License key should be provided in the LICENSE_FILE. */
 	license = fopen(LICENSE_FILE, "r");
-	if (license == NULL) {
+	if (license == NULL)
+	{
 		goto failure;
 	}
 
 	/* License key is only an integer. */
-	if (fscanf(license, "%d", &user_license_key) != 1) {
+	if (fscanf(license, "%d", &user_license_key) != 1)
+	{
 		goto ofile_failure;
 	}
 
@@ -52,7 +54,8 @@ failure:
 
 int main(void)
 {
-	if (validate_license()) {
+	if (validate_license())
+	{
 		puts("License valid!");
 		return EXIT_SUCCESS;
 	}

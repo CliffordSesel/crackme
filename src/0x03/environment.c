@@ -26,17 +26,19 @@ int main(void)
 	long int passcode;
 
 	variable = getenv("FLAG");
-	if (variable == NULL) {
+	if (variable == NULL)
+	{
 		goto failure;
 	}
 
 	passcode = strtol(variable, NULL, FLAG_BASE);
-	if (passcode == FLAG) {
+	if (passcode == FLAG)
+	{
 		puts("Password correct!");
 		return EXIT_SUCCESS;
 	}
 
 failure:
-	puts("Password incorrect.\n");
+	puts("Password incorrect.");
 	return EXIT_FAILURE;
 }

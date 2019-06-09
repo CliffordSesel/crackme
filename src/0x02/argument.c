@@ -24,15 +24,17 @@ int main(int argc, char **argv)
 {
 	long int passcode;
 
-	if (argc >= 2) {
+	if (argc >= 2)
+	{
 		/* An argument was passed to the program. */
 		passcode = strtol(argv[1], NULL, FLAG_BASE);
-		if (passcode == FLAG) {
+		if (passcode == FLAG)
+		{
 			puts("Password correct!");
 			return EXIT_SUCCESS;
 		}
 	}
 
-	puts("Password incorrect.\n");
+	puts("Password incorrect.");
 	return EXIT_FAILURE;
 }

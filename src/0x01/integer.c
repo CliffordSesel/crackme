@@ -30,7 +30,8 @@ int main(void)
 	printf("%s", "Password: ");
 
 	/* Read password from user input. */
-	if (fgets(buffer, BUFFER_SIZE, stdin) == NULL) {
+	if (fgets(buffer, BUFFER_SIZE, stdin) == NULL)
+	{
 		goto failure;
 	}
 
@@ -39,12 +40,13 @@ int main(void)
 	 * Errors are caught when the comparison to FLAG is made.
 	 */
 	passcode = strtol(buffer, NULL, FLAG_BASE);
-	if (passcode == FLAG) {
-		puts("Password correct!\n");
+	if (passcode == FLAG)
+	{
+		puts("Password correct!");
 		return EXIT_SUCCESS;
 	}
 
 failure:
-	puts("Password incorrect.\n");
+	puts("Password incorrect.");
 	return EXIT_FAILURE;
 }

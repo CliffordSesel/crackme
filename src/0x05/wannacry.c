@@ -104,7 +104,8 @@ error:
 
 int main(void)
 {
-	if (is_killswitch_alive()) {
+	if (is_killswitch_alive())
+	{
 		puts("Malware disabled!");
 		return EXIT_SUCCESS;
 	}

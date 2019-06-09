@@ -40,11 +40,12 @@ int main(void)
 	 * Validate password.
 	 * strlen(buffer) - 1 to account for an expected newline.
 	 */
-	if (strncmp(buffer, FLAG, strlen(buffer) - 1) == 0) {
-		puts("Password correct!\n");
+	if (strncmp(buffer, FLAG, strlen(buffer) - 1) == 0)
+	{
+		puts("Password correct!");
 		return EXIT_SUCCESS;
 	}
 
-	puts("Password incorrect.\n");
+	puts("Password incorrect.");
 	return EXIT_FAILURE;
 }
