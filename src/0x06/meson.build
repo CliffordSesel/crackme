@@ -14,10 +14,21 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-subdir('0x00')
-subdir('0x01')
-subdir('0x02')
-subdir('0x03')
-subdir('0x04')
-subdir('0x05')
-subdir('0x06')
+challenge_name = '0x06'
+challenge_src_files = files(
+  'rng.c'
+)
+
+src_files += challenge_src_files
+
+executable(
+  challenge_name,
+  challenge_src_files,
+  install : true,
+  install_dir : challenge_name
+)
+
+install_data(
+  'README',
+  install_dir : challenge_name
+)
