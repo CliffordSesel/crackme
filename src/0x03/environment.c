@@ -20,7 +20,7 @@
 #define FLAG        6841
 #define FLAG_BASE   10
 
-int main(int argc, char **argv)
+int main(void)
 {
 	char *variable;
 	long int passcode;

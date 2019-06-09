@@ -50,7 +50,7 @@ failure:
 	return false;
 }
 
-int main(int argc, char **argv)
+int main(void)
 {
 	if (validate_license()) {
 		puts("License valid!");
