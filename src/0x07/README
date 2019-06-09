@@ -1,0 +1,5 @@
+This binary requires authentication with an access code.
+
+There are two tasks:
+i) Exploit a bug that results in the program printing 'Access granted!'.
+ii) Modify the binary such that any input results in 'Access granted!'.
