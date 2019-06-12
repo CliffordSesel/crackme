@@ -18,10 +18,9 @@ Releases can be found on the release page.
 
 Building the exercises can be done from the source directory by running:
 $ meson build --prefix $(pwd)/install
-$ cd build
-$ ninja
+$ ninja -C build
 
 Installing can be done by:
-$ ninja install
+$ ninja -C build install
 
 Licensed under GPL3.
