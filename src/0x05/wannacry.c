@@ -21,7 +21,7 @@
 
 #include <curl/curl.h>
 
-#define DOMAIN "https://re.jtalowell.com"
+#define DOMAIN "http://re.jtalowell.com"
 
 struct curl_response
 {
